@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,7 +33,7 @@ namespace BenGurionAirportParkingPriceCalculator.CalculateStrategy
 
             totalPrice += parkingPeriod.Days * maxForDay;
 
-            if (parkingPeriod.Hours == 0)
+            if (parkingPeriod.Hours == 0 && parkingPeriod.Minutes > 0)
             {
                 totalPriceForLastDay += 18; // Minimum price for a day
             }
@@ -61,7 +61,7 @@ namespace BenGurionAirportParkingPriceCalculator.CalculateStrategy
 
             totalPrice += parkingPeriod.Days * maxForDay;
 
-            if (parkingPeriod.Hours == 0)
+            if (parkingPeriod.Hours == 0 && parkingPeriod.Minutes > 0)
             {
                 totalPriceForLastDay += 20; // Minimum price for a day
             }
