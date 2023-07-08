@@ -183,6 +183,7 @@ namespace BenGurionAirportParkingPriceCalculator
         {
             if (dateTimePickerStartTime.Value > dateTimePickerEndTime.Value)
             {
+
                 throw new InvalidDatesException();
             }
         }
