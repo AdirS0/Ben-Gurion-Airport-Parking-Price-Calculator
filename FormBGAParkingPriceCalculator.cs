@@ -1,13 +1,16 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Windows.Forms;
 using BenGurionAirportParkingPriceCalculator.CalculateStrategy;
 using BenGurionAirportParkingPriceCalculator.Exceptions;
+using Project1;
 
 namespace BenGurionAirportParkingPriceCalculator
 {
@@ -220,6 +223,12 @@ Your parking price will be {parkingPrice} shekels", "Price", MessageBoxButtons.O
 
                 MessageBox.Show(ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void buttonInfo_Click(object sender, EventArgs e)
+        {
+            FormInfo formInfo = new FormInfo();
+            formInfo.Show();
         }
     }
 }
