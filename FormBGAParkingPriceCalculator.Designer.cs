@@ -1,4 +1,4 @@
-﻿namespace BenGurionAirportParkingPriceCalculator
+namespace BenGurionAirportParkingPriceCalculator
 {
     partial class FormBGAParkingPriceCalculator
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBGAParkingPriceCalculator));
             this.buttonShortRange = new System.Windows.Forms.Button();
             this.buttonLongRange = new System.Windows.Forms.Button();
             this.buttonTerminalOne = new System.Windows.Forms.Button();
@@ -44,6 +45,7 @@
             this.labelWithCoverInfo = new System.Windows.Forms.Label();
             this.buttonReset = new System.Windows.Forms.Button();
             this.buttonCalculate = new System.Windows.Forms.Button();
+            this.buttonInfo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonShortRange
@@ -211,9 +213,9 @@
             // buttonReset
             // 
             this.buttonReset.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonReset.Location = new System.Drawing.Point(300, 0);
+            this.buttonReset.Location = new System.Drawing.Point(332, 0);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(75, 26);
+            this.buttonReset.Size = new System.Drawing.Size(43, 26);
             this.buttonReset.TabIndex = 14;
             this.buttonReset.Text = "Reset";
             this.buttonReset.UseVisualStyleBackColor = true;
@@ -231,11 +233,23 @@
             this.buttonCalculate.UseVisualStyleBackColor = true;
             this.buttonCalculate.Click += new System.EventHandler(this.buttonCalculate_Click);
             // 
+            // buttonInfo
+            // 
+            this.buttonInfo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonInfo.BackgroundImage")));
+            this.buttonInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonInfo.Location = new System.Drawing.Point(3, 2);
+            this.buttonInfo.Name = "buttonInfo";
+            this.buttonInfo.Size = new System.Drawing.Size(25, 25);
+            this.buttonInfo.TabIndex = 16;
+            this.buttonInfo.UseVisualStyleBackColor = true;
+            this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
+            // 
             // FormBGAParkingPriceCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 211);
+            this.Controls.Add(this.buttonInfo);
             this.Controls.Add(this.buttonCalculate);
             this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.labelWithCoverInfo);
@@ -280,5 +294,6 @@
         private System.Windows.Forms.Label labelWithCoverInfo;
         private System.Windows.Forms.Button buttonReset;
         private System.Windows.Forms.Button buttonCalculate;
+        private System.Windows.Forms.Button buttonInfo;
     }
 }
