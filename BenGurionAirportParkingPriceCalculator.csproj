@@ -35,17 +35,17 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="CalculateLongRangePrice.cs" />
-    <Compile Include="CalculateParkingPrice.cs" />
-    <Compile Include="CalculateShortRangePrice.cs" />
-    <Compile Include="FormMain.cs">
+    <Compile Include="CalculateStrategy\CalculateLongRangePrice.cs" />
+    <Compile Include="CalculateStrategy\CalculateParkingPrice.cs" />
+    <Compile Include="CalculateStrategy\CalculateShortRangePrice.cs" />
+    <Compile Include="FormBGAParkingPriceCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <Compile Include="FormBGAParkingPriceCalculator.Designer.cs">
+      <DependentUpon>FormBGAParkingPriceCalculator.cs</DependentUpon>
     </Compile>
-    <Compile Include="InvalidDatesException.cs" />
-    <Compile Include="ICalculateParkingPriceStrategy.cs" />
+    <Compile Include="Exceptions\InvalidDatesException.cs" />
+    <Compile Include="CalculateStrategy\ICalculateParkingPriceStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -61,8 +61,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <EmbeddedResource Include="FormBGAParkingPriceCalculator.resx">
+      <DependentUpon>FormBGAParkingPriceCalculator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
